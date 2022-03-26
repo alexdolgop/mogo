@@ -71,7 +71,7 @@
     position: relative;
     &:hover{
         color: #fce38a;
-        transition: color .3s ease-in;
+        transition: color .2s ease-in;
     }
 }
 
@@ -84,7 +84,7 @@
     left: 0;
     bottom: -7px;
     transform: scaleX(0);
-    transition: .4s ease;
+    transition: .2s ease;
     transform-origin: left;
     
 }
@@ -167,3 +167,4 @@
         transition: background .3s ease-in; 
     } 
 }
+
