@@ -1,0 +1,168 @@
+.header{
+    padding-top: 27px;
+    min-height: 100vh;
+    background-color: adjust-hue($color: #f18080, $degrees: 0);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-image: url(../img/banner.png);
+        opacity: 0.7;
+    }
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 170px;
+    z-index: 5;
+}
+
+.header-navigation{
+    display: flex;
+}
+.menu-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo{
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+  transition: color .4s ease-in;
+  &:hover{
+    color: #fce38a;
+    transition: color .3s ease-in;
+}
+}
+
+.header__burger{
+    display: none;
+}
+.mobile-nav{
+    display: none;
+}
+
+
+.menu-main li{
+    margin-right: 55px;   
+}
+
+.menu-main li:last-of-type{
+    margin-right: 0px;
+}
+
+.menu-main__link{
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    transition: color .4s ease-in;
+    position: relative;
+    &:hover{
+        color: #fce38a;
+        transition: color .3s ease-in;
+    }
+}
+
+.menu-main__link:before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #fce38a;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transform: scaleX(0);
+    transition: .4s ease;
+    transform-origin: left;
+    
+}
+.menu-main__link:hover:before{
+    transform: scaleX(1);
+    transition: .4s ease;
+ }
+
+ .header-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    padding-left: 50px;
+    .header-shopping-cart{
+     cursor: pointer;
+     transition: transform .4s ease;
+     &:hover{
+         transform: scale(1.4);
+         transition: transform .4s ease;
+     }
+    }
+    .header-search-button {
+        cursor: pointer;
+        transition: transform .4s ease;
+        &:hover{
+            transform: scale(1.4);
+            transition: transform .4s ease;
+        }
+    }
+}
+
+.header-main{
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    .main-title{
+        font-family: "Hurricane", sans-serif;
+        font-size: 72px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .header-subtitle{
+        width: 840px;
+        margin: 0 auto 50px;
+        padding-bottom: 70px;
+        font-size: 150px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 140px;
+        text-align: center;
+        position: relative;
+        // opacity: 0;
+        // transform: scale(0);
+        // &.anim-items{
+        //     opacity: 1;
+        //     transform: scale(1);
+        // }
+        &::before{
+          content: "";
+          position: absolute;
+          width: 62px;
+          height: 3px;
+          background-color: #fff;
+          left: 46%;
+          bottom: 1px;
+        }
+    } 
+}
+
+.header-button{
+    display: inline-block;
+    padding: 8px 31px;
+    color: #fff;
+    border: 4px solid #fff;
+    background: transparent;
+    transition: background .5s ease-in; 
+    &:hover{
+        background: #e78382;
+        transition: background .3s ease-in; 
+    } 
+}

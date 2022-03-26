@@ -52,4 +52,17 @@
     font-display: swap;     
 }
 
+@font-face {
+    font-family: 'Hurricane';
+    src: url('../fonts/Hurricane-Regular.eot'),
+        url('../fonts/Hurricane-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Hurricane-Regular.woff2') format('woff2'),
+        url('../fonts/Hurricane-Regular.woff') format('woff'),
+        url('../fonts/Hurricane-Regular.svg#Hurricane-Regular') format('svg'),
+        url('../fonts/Hurrican-Regular') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
