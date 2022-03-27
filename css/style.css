@@ -416,3 +416,137 @@ body {
   -webkit-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
 }
+
+.our-achievements {
+  background-color: #95e1d3;
+  height: 270px;
+}
+.our-achievements .achievements-items {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+.our-achievements .achievements-items .achievements-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 245px;
+  height: 270px;
+  border-left: solid 1px #fff;
+  border-right: solid 1px #fff;
+  color: #fff;
+}
+.our-achievements .achievements-items .achievements-item .achievements-item__numbers {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 84px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.9s ease-in-out;
+  transition: -webkit-transform 0.9s ease-in-out;
+  transition: transform 0.9s ease-in-out;
+  transition: transform 0.9s ease-in-out, -webkit-transform 0.9s ease-in-out;
+}
+.our-achievements .achievements-items .achievements-item .achievements-item__numbers.active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.9s ease-in-out;
+  transition: -webkit-transform 0.9s ease-in-out;
+  transition: transform 0.9s ease-in-out;
+  transition: transform 0.9s ease-in-out, -webkit-transform 0.9s ease-in-out;
+}
+.our-achievements .achievements-items .achievements-item .achievements-item__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.9s ease-in-out;
+  transition: -webkit-transform 0.9s ease-in-out;
+  transition: transform 0.9s ease-in-out;
+  transition: transform 0.9s ease-in-out, -webkit-transform 0.9s ease-in-out;
+}
+.our-achievements .achievements-items .achievements-item .achievements-item__text.active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.9s ease-in-out 0.5s;
+  transition: -webkit-transform 0.9s ease-in-out 0.5s;
+  transition: transform 0.9s ease-in-out 0.5s;
+  transition: transform 0.9s ease-in-out 0.5s, -webkit-transform 0.9s ease-in-out 0.5s;
+}
+
+.us {
+  padding-top: 40px;
+}
+
+.services {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  background-color: #ffffff;
+}
+
+.services-sections__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 45px;
+}
+.services-sections__items .servicec-sections__item {
+  width: 360px;
+  height: 180px;
+  padding: 15px 20px 10px 70px;
+  margin: 5px;
+  border: solid 1px #dad7d7;
+  border-radius: 4px;
+  -webkit-box-shadow: 5px 6px 6px #95e1d3;
+          box-shadow: 5px 6px 6px #95e1d3;
+  -webkit-transition: -webkit-box-shadow 0.6s ease-in-out;
+  transition: -webkit-box-shadow 0.6s ease-in-out;
+  transition: box-shadow 0.6s ease-in-out;
+  transition: box-shadow 0.6s ease-in-out, -webkit-box-shadow 0.6s ease-in-out;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  position: relative;
+  cursor: pointer;
+}
+.services-sections__items .servicec-sections__item:hover {
+  -webkit-box-shadow: 1px 1px 3px #95e1d3;
+          box-shadow: 1px 1px 3px #95e1d3;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+}
+.services-sections__items .servicec-sections__item .services-sections__img {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.services-sections__items .servicec-sections__item .services-sections__title {
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.services-sections__items .servicec-sections__item .services-sections__text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}

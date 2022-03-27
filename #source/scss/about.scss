@@ -52,8 +52,7 @@
            height: 254px;
            overflow: hidden;
            cursor: pointer; 
-           position: relative;
-           
+           position: relative; 
            &::before{
                content: "";
                position: absolute;
@@ -102,4 +101,51 @@
  .about-item:hover .about-team{
     opacity: 1;
     transition: opacity .4s ease-in-out;
+}
+
+.our-achievements {
+    background-color: #95e1d3;
+    height: 270px;
+    .achievements-items {
+        max-width: 1220px;
+        margin: 0 auto;
+        display: flex;
+        text-align: center;
+        .achievements-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 245px;
+            height: 270px;
+            border-left: solid 1px #fff;
+            border-right: solid 1px #fff;
+            color:#fff;
+            .achievements-item__numbers {
+               font-size: 72px;
+               font-weight: 700;
+               line-height: 84px;
+               transform: scale(0);
+               transition: transform .9s ease-in-out;
+               &.active{
+                   transform: scale(1);
+                   transition: transform .9s ease-in-out;
+               }
+            }
+            .achievements-item__text { 
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+                transform: scale(0);
+                transition: transform .9s ease-in-out;
+                &.active{
+                    transform: scale(1);
+                    transition: transform .9s ease-in-out .5s;
+                }
+            }
+        }
+    }
+}
+
+.us{
+    padding-top: 40px;
 }
