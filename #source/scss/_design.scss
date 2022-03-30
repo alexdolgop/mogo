@@ -1,0 +1,26 @@
+.devices {
+    height: 840px;
+    padding-top: 95px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.devices-position {
+    padding-top: 20px;
+    position: relative;
+    .ipad-img {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+.img-ipad {
+}
+.iphone-img {
+}
+.img-ip {
+}
