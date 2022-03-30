@@ -46,6 +46,9 @@ if(animItems.length > 0) {
 
 };
 
+// Код на jQuery
+
+// Спойлеры
 
 $(document).ready(function() {
     $('.spoilers__title').click(function(event){
@@ -55,9 +58,23 @@ $(document).ready(function() {
      }   
      $(this).toggleClass('active').next().slideToggle(300);
     });
+
 });
 
 
+//Слайдер
 
+$(document).ready(function() {
+ $('.slider').slick({
+   arrows: true, 
+   slidesToShow: 3,
+   slidesToScroll: 1,
+   speed: 700,
+   easing: 'ease',
+   autoplay: true,
+   Infinite: false,
+   pauseFocus: true
+ });   
+});  
 
 //# sourceMappingURL=main-dist-dist.js.map

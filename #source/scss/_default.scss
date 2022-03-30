@@ -41,3 +41,12 @@ body{
     margin: 0 auto;
     padding: 0 15px;
 }
+
+// Для слайдера
+
+.slick-track{
+    display: flex;
+}
+.slick-list{
+    overflow: hidden;
+}
