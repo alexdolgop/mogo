@@ -71,6 +71,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
 
 .main {
@@ -338,7 +339,7 @@ body {
   text-transform: uppercase;
 }
 
-.about-text {
+.chapter-text {
   max-width: 964px;
   margin: 0 auto;
   padding-top: 44px;
@@ -347,7 +348,7 @@ body {
   font-weight: 400;
   text-align: center;
 }
-.about-text::first-letter {
+.chapter-text::first-letter {
   text-transform: uppercase;
 }
 
@@ -564,17 +565,170 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: hidden;
 }
 
 .devices-position {
+  width: 100%;
+  height: 615px;
   padding-top: 20px;
   position: relative;
 }
 .devices-position .ipad-img {
+  width: 470px;
+  height: auto;
   position: absolute;
-  top: 0;
+  bottom: 0px;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+}
+.devices-position .ipad-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.devices-position .ipad-img .iphone-img {
+  position: absolute;
+  top: 139px;
+  right: -95px;
+  z-index: 5;
+}
+
+.spoilers {
+  margin-bottom: 120px;
+}
+.spoilers .spoilers__inner {
+  height: 382px;
+  width: 100%;
+}
+.spoilers .spoilers__inner .spoilers__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.spoilers .spoilers__inner .spoilers__blocks .spoilers__block {
+  width: 572px;
+}
+
+.spoilers__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.spoilers__item .spoilers__text {
+  width: 100%;
+  max-height: 180px;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 0 20px;
+  display: none;
+  overflow: auto;
+}
+.spoilers__item .spoilers__text::first-letter {
+  text-transform: uppercase;
+}
+.spoilers__item .spoilers__title {
+  height: 60px;
+  width: 100%;
+  padding-left: 60px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.spoilers__item .spoilers__title .spoilers-icon {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 15px;
+}
+.spoilers__item .spoilers__title::before {
+  content: "";
+  width: 10px;
+  height: 1px;
+  background-color: #16e021;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+.spoilers__item .spoilers__title::after {
+  content: "";
+  width: 10px;
+  height: 1px;
+  background-color: #16e021;
+  position: absolute;
+  top: 20px;
+  right: 18px;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.spoilers__title.active::before,
+.spoilers__title.active::after {
+  background-color: #0cd5f0;
+}
+
+.spoilers__title.active::before {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.spoilers__title.active::after {
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.spoilers__text::-webkit-scrollbar {
+  width: 8px;
+}
+
+.spoilers__text::-webkit-scrollbar-track {
+  background: #0ad8cd;
+}
+
+.spoilers__text::-webkit-scrollbar-thumb {
+  background: #df5050;
+  border-radius: 5px;
+  border: 2px solid #fff;
+}
+
+.work {
+  padding-top: 105px;
 }

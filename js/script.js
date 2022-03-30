@@ -46,6 +46,18 @@ if(animItems.length > 0) {
 
 };
 
- 
+
+$(document).ready(function() {
+    $('.spoilers__title').click(function(event){
+     if($('.spoilers__items').hasClass('one')){
+        $('.spoilers__title').not($(this)).removeClass('active');
+        $('.spoilers__text').not($(this).next()).slideUp(300);
+     }   
+     $(this).toggleClass('active').next().slideToggle(300);
+    });
+});
+
+
+
 
 //# sourceMappingURL=main-dist-dist.js.map
