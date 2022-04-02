@@ -619,6 +619,11 @@ body {
   z-index: 5;
 }
 
+.spoiler {
+  padding-top: 95px;
+  margin-top: 50px;
+}
+
 .spoilers {
   margin-bottom: 120px;
 }
