@@ -97,3 +97,18 @@ baguetteBox.run('.works-grid__inner', {
     overlayBackgroundColor: 'rgba(113,117,115,0.1)'
 });
 //# sourceMappingURL=main-dist-dist.js.map
+
+// Скролл 
+
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors){
+   anchor.addEventListener("click", function(event){
+       event.preventDefault();
+       const blockID = anchor.getAttribute('href')
+       document.querySelector('' + blockID).scrollIntoView({
+           behavior: "smooth",
+           block: "start"
+       })
+   })  
+}

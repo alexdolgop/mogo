@@ -1267,6 +1267,10 @@ input::placeholder {
   display: inline-block;
   margin-right: 20px;
 }
+.form__desing:hover {
+  color: #574b4b;
+  font-weight: 500;
+}
 
 .form__photografy {
   margin-bottom: 20px;
@@ -1281,6 +1285,10 @@ input::placeholder {
   margin-right: 20px;
   background-color: #37b679;
 }
+.form__photografy:hover {
+  color: #574b4b;
+  font-weight: 500;
+}
 
 .form__html {
   font-size: 15px;
@@ -1292,6 +1300,10 @@ input::placeholder {
 .form__html .checkbox {
   display: inline-block;
   margin-right: 20px;
+}
+.form__html:hover {
+  color: #574b4b;
+  font-weight: 500;
 }
 
 .footer-copirate {

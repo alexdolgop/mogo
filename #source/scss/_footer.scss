@@ -108,6 +108,10 @@ input::placeholder{
         display: inline-block;
         margin-right: 20px;
     }
+    &:hover{
+        color:  #574b4b;
+        font-weight: 500;
+    }
 }
 .form__photografy {
     margin-bottom: 20px;
@@ -121,6 +125,10 @@ input::placeholder{
         margin-right: 20px;
         background-color: #37b679;
     }
+    &:hover{
+        color:  #574b4b;
+        font-weight: 500;
+    }
 }
 .form__html {
     font-size: 15px;
@@ -130,8 +138,11 @@ input::placeholder{
     cursor: pointer;
     .checkbox{
         display: inline-block;
-        margin-right: 20px;
-       
+        margin-right: 20px;  
+    }
+    &:hover{
+        color:  #574b4b;
+        font-weight: 500;
     }
 }
 
