@@ -77,4 +77,23 @@ $(document).ready(function() {
  });   
 });  
 
+
+baguetteBox.run('.works-grid__inner', {
+    captions: true,
+    buttons: 'auto',
+    fullScreen: true,
+    noScrollbars: false,
+    titleTag: true,
+    async: false,
+    preload: 7,
+    animation: 'fadeIn',
+    // afterShow: function() {
+    //     alert('Thanks');
+    // },
+    // afterHide: function() {
+    //     alert('Watch again');
+    // },
+    onChange: null,
+    overlayBackgroundColor: 'rgba(113,117,115,0.1)'
+});
 //# sourceMappingURL=main-dist-dist.js.map
