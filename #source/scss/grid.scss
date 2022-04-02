@@ -1,0 +1,101 @@
+.works-grid {
+    height: 780px;
+    margin-bottom: 40px;
+    .works-grid__inner {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 385px);
+        .works-grid__item {  
+          overflow: hidden;
+          & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  
+          }         
+       }
+    }
+}
+
+.grid__one{
+    grid-column: span 1;
+    grid-row: span 1;
+    order: 1;
+    opacity: 0;
+    transform: translateX(-100%);
+    &.works-grid__item.active{
+       transform: translateX(0);
+       opacity: 1;
+       transition: all .5s ease-in .3s;
+    }
+}
+.grid__two{
+    grid-column: span 1;
+    grid-row: span 1;
+    order: 2;
+    transform: scale(0);
+    opacity: 0;
+    &.works-grid__item.active{
+       opacity: 1;
+       transform: scale(1);
+       transition: all .5s ease-in .1s;
+    }
+}
+.grid__three{
+    grid-column: span 1;
+    grid-row: span 2;
+    order: 3;
+    transform: translateY(40%);
+    opacity: 0;
+    &.works-grid__item.active{
+       transform: translateY(0);
+       opacity: 1;
+       transition: all .5s ease-in .6s;
+    }
+}
+.grid__four{
+    grid-column: span 1;
+    grid-row: span 1;
+    order: 4;
+    transform: translateX(100%);
+    opacity: 0;
+    &.works-grid__item.active{
+       transform: translateX(0);
+       opacity: 1;
+       transition: all .5s ease-in .4s;
+    }
+}
+.grid__five{
+    grid-column: span 1;
+    grid-row: span 1;
+    order: 5;
+    transform: translateY(40%);
+    opacity: 0;
+    &.works-grid__item.active{
+       transform: translateY(0);
+       opacity: 1;
+       transition: all .5s ease-in .5s;
+    }
+}
+.grid__six{
+    grid-column: span 1;
+    grid-row: span 1;
+    order: 6;
+    opacity: 0;
+    &.works-grid__item.active{
+       opacity: 1;
+       transition: opacity .5s ease-in .6s;
+    }
+}
+.grid__seven{
+    grid-column: span 1;
+    grid-row: span 1;
+    order: 7;
+    transform: translateX(70%);
+    opacity: 0;
+    &.works-grid__item.active{
+        transform: translateX(0); 
+       opacity: 1;
+       transition: all .5s ease-in .7s;
+    }
+}
+
