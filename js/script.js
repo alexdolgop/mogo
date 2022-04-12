@@ -1,3 +1,9 @@
+// Прогесс бар
+
+
+
+//Бургер
+
 $(document).ready(function () {
     $('.header__burger').click(function (event) {
         $('.header__burger, .nav-mobile').toggleClass('active');
@@ -5,6 +11,9 @@ $(document).ready(function () {
 
 
 });
+
+
+// Анимация
 
 const animItems = document.querySelectorAll('.anim-items');
   
@@ -46,7 +55,7 @@ if(animItems.length > 0) {
 
 };
 
-// Код на jQuery
+
 
 // Спойлеры
 
@@ -78,6 +87,9 @@ $(document).ready(function() {
 });  
 
 
+// Багет бокс
+
+
 baguetteBox.run('.works-grid__inner', {
     captions: true,
     buttons: 'auto',
@@ -98,6 +110,8 @@ baguetteBox.run('.works-grid__inner', {
 });
 //# sourceMappingURL=main-dist-dist.js.map
 
+
+
 // Скролл 
 
 const anchors = document.querySelectorAll('a[href*="#"]')
@@ -112,3 +126,24 @@ for (let anchor of anchors){
        })
    })  
 }
+
+// Кнопка вверх
+
+function backToTop (){
+    let button = $('.back-to-top');
+
+    $(window).on('scroll', () => {
+        if($(this).scrollTop() >= 600){
+            button.fadeIn(300);
+        }else{
+            button.fadeOut(600);
+        }
+    });
+
+    button.on('click', (e) => {
+        e.preventDefault();
+        $('html').animate({scrollTop: 0}, 1000);
+    })
+}
+
+backToTop();
